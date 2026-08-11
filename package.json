@@ -1,0 +1,26 @@
+{
+  "name": "tiny-cymbal",
+  "version": "1.0.0",
+  "description": "Turns Spotify tracks into physics-simulated galaxies.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/three": "^0.185.4",
+    "typescript": "^7.0.2",
+    "vite": "^8.2.1"
+  },
+  "dependencies": {
+    "three": "^0.185.1"
+  }
+}
