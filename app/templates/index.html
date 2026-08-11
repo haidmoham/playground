@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>starfield</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+  <div id="app">
+    <div id="ui">
+      <h1>starfield</h1>
+      <p>Turn a Spotify track into a galaxy.</p>
+      <input id="search" type="text" placeholder="Search Spotify tracks..." autocomplete="off" />
+      <ul id="results"></ul>
+    </div>
+    <canvas id="galaxy"></canvas>
+    <div id="now-playing" class="hidden">
+      <img id="album-art" src="" alt="album art" />
+      <div>
+        <div id="track-name"></div>
+        <div id="track-artists"></div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/static/js/galaxy.js"></script>
+</body>
+</html>

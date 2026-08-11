@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>starfield</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+  </head>
+  <body>
+    <canvas id="galaxy"></canvas>
+
+    <div id="hud">
+      <header>
+        <h1>starfield</h1>
+        <p>spotify → galaxy</p>
+      </header>
+
+      <section id="controls">
+        <div id="auth">
+          <button id="auth-btn" type="button">[ connect spotify ]</button>
+          <span id="auth-status"></span>
+        </div>
+
+        <div id="search-wrap" class="hidden">
+          <input id="search" type="text" placeholder="search tracks…" autocomplete="off" />
+          <ul id="results"></ul>
+        </div>
+
+        <div id="demos">
+          <div class="label">demos</div>
+          <ul id="demo-list"></ul>
+        </div>
+      </section>
+
+      <section id="readout">
+        <div class="label">generation pipeline</div>
+        <div id="track-info"></div>
+        <div id="vector-display"></div>
+        <div id="galaxy-params"></div>
+      </section>
+    </div>
+
+    <div id="now-playing" class="hidden">
+      <img id="album-art" src="" alt="" />
+      <div>
+        <div id="track-name"></div>
+        <div id="track-artists"></div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
